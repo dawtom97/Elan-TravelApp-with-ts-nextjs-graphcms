@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/image'
 import { ReactNode } from 'react'
 
 import { AllPlacesProps } from '../../../types/AllPlaces.types'
@@ -8,6 +9,5 @@ export type HomeTemplateProps = {
 }
 
 export type StylesProps = {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    image:string | any
+    image: StaticImageData
 }

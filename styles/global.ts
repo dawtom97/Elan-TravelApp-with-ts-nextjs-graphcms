@@ -16,7 +16,10 @@ export const GlobalStyles = createGlobalStyle<{theme:GlobalStylesProps}>`
     }
 
     html {
-        font-size: 10px;
+        font-size: 8px;
+        @media screen and (min-width:768px) {
+            font-size:10px;
+        }
     }
 
     body {
