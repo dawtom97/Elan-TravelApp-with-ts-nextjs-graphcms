@@ -6,6 +6,7 @@ import banner2 from '../../../assets/elanBanner2.jpg';
 import banner3 from '../../../assets/elanBanner3.jpg';
 import BannerSlogan from '../../organisms/BannerSlogan/BannerSlogan';
 import { useBannerImage } from '../../../hooks/useBannerImage';
+import { Header } from '../../organisms/Header/Header';
 
 const images = [banner1,banner2,banner3]
 
@@ -14,12 +15,13 @@ export const HomeTemplate = ({ children }: HomeTemplateProps) => {
 
   return (
     <Styled.Wrapper>
-    
       <Styled.Banner image={images[currentImage]}>
         <BannerSlogan/>
       </Styled.Banner>
       <Styled.Content>
-        {children}</Styled.Content>
+      <Header/>
+        {children}
+      </Styled.Content>
     </Styled.Wrapper>
   );
 };

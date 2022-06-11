@@ -6,7 +6,8 @@ export const Wrapper = styled.nav`
    justify-content: space-between;
 
    & > svg {
-    font-size: 2.4rem;
+    font-size: 3rem;
+    cursor: pointer;
     color: ${({theme})=>theme.primary}
    }
 
