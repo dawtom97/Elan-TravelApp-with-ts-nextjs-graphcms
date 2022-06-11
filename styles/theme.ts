@@ -1,5 +1,7 @@
 const mainTheme = {
-    primary: '#EE4444'
+    primary: '#EE4444',
+    primaryAlt: '#a92828',
+    white:'#ffffff'
 }
 
 export const lightTheme = {
